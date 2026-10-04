@@ -205,6 +205,7 @@
           <li><a href="#proposal4">4D Future Interaction Prediction</a></li>
           <li><a href="#proposal3">4D Vision Foundation Models</a></li>
           <li><a href="#section4">4D Scene Understanding</a></li>
+          <li><a href="#proposal5">Learning from Temporally Correlated Data</a></li>
         </ul>
       </li>
 
@@ -335,6 +336,31 @@
           <li>[1] Kerr, Justin, et al. "Lerf: Language embedded radiance fields." Proceedings of the IEEE/CVF International Conference on Computer Vision. 2023.</li>
           <li>[2] Mur-Labadia, Lorenzo, Josechu Guerrero, and Ruben Martinez-Cantin. "DIV-FF: Dynamic Image-Video Feature Fields For Environment Understanding in Egocentric Videos." Proceedings of the Computer Vision and Pattern Recognition Conference. 2025.</li>
           <li>[3] Plizzari, Chiara, et al. "Spatial cognition from egocentric video: Out of sight, not out of mind." 2025 International Conference on 3D Vision (3DV). IEEE, 2025.</li>
+        </ul>
+      </div>
+
+      <!-- Proposal 5 -->
+      <div id="proposal5" class="section">
+        <h2>Learning from Temporally Correlated Data: A Controlled Study for Optimization in Vision</h2>
+        <p class="requirements">Requirements: Python, PyTorch</p>
+        <p class="collaborators">Collaborators: Elisabetta Cornacchia from the Department of Computing Sciences</p>
+
+        <figure style="text-align: center;">
+          <img src="images/temporal_correlations.png" alt="Correlated gradients across consecutive steps" class="placeholder">
+          <figcaption style="font-size: 0.9em; color: #555; margin-top: 6px;">Image from [1] </figcaption>
+        </figure>
+
+        <p>
+          The empirical success of deep learning methods continues to outpace our theoretical understanding. Most existing theory studies either worst-case settings or idealized i.i.d. data models, while many real data sources, such as video, fall in an intermediate regime and exhibit structured temporal correlations. These correlations play a subtle role: on the one hand, they create dependencies among gradients, leading to optimization challenges and motivating specialized methods to decorrelate updates [1]; on the other hand, they can also carry useful information, revealing hidden structure in the target task that is invisible under i.i.d. sampling [2].
+        </p>
+        <p>
+          This project aims to investigate this trade-off in a controlled setting, motivated by realistic applications, particularly in vision. We will develop a toy model of temporally correlated data in which each step consists of sparse, local updates, designed to capture the limited and localized changes that typically occur between consecutive frames in video streams. We will study how model parameters, such as the sparsity and persistence of the updates, as well as optimizer choices, including SGD, Adam, the loss function, and hyperparameters, affect optimization performance in this model. We will then validate our findings on standard benchmarks of real vision data.
+        </p>
+
+        <p><strong>References:</strong></p>
+        <ul class="references">
+          <li>[1] Han, Tengda, et al. "Learning from streaming video with orthogonal gradients." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2025.</li>
+          <li>[2] Cornacchia, Elisabetta, Dan Mikulincer, and Elchanan Mossel. "The benefits of temporal correlations: SGD learns k-juntas from random walks efficiently." arXiv preprint arXiv:2605.10237 (2026).</li>
         </ul>
       </div>
 
