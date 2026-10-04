@@ -204,6 +204,7 @@
           <li><a href="#new-proposals">Overview</a></li>
           <li><a href="#proposal4">4D Future Interaction Prediction</a></li>
           <li><a href="#proposal3">4D Vision Foundation Models</a></li>
+          <li><a href="#section4">4D Scene Understanding</a></li>
         </ul>
       </li>
 
@@ -218,7 +219,6 @@
             <li><a href="#section1">Video QA</a></li>
             <li><a href="#section2">Neurosymbolic</a></li>
             <li><a href="#section3">World Models</a></li>
-            <li><a href="#section4">4D Scene</a></li>
             <li><a href="#section5">Brain Functioning</a></li>
             <li><a href="#section6">Ego-4D / Ego-Exo-4D</a></li>
           </ul>
@@ -309,6 +309,34 @@
       </div>
 
     
+
+      <!-- 4D Scene (moved from Old Proposals) -->
+      <div id="section4" class="section">
+        <h2>4D Scene Understanding for Egocentric Vision
+          <img src="images/microsoft.png" alt="Microsoft Research Logo" style="height:42px; margin-left:20px; vertical-align:middle;">
+        </h2>
+        <p class="requirements">Requirements: Python, PyTorch, basic fundamentals on 3D</p>
+        <p class="collaborators">Collaborators: <a href="https://gabrielegoletto.github.io/" target="_blank">Gabriele Goletto</a> from Microsoft Research</p>
+        <figure style="text-align: center;">
+          <img src="images/4d_scene.png" alt="4D Scene Placeholder" class="placeholder">
+          <figcaption style="font-size: 0.9em; color: #555; margin-top: 6px;">Image from [1] </figcaption>
+        </figure>
+        <p>
+          This thesis investigates a method for 4D scene understanding by encoding the dynamic visual content of 2D videos into a spatially structured 3D representation. Inspired by Language Embedded Radiance Fields (LERF) [1], which ground language embeddings into 3D to enable open-ended queries over static scenes, the core idea is to augment volumetric scene representations with embedded descriptors that capture not only geometric and appearance information, but also temporally localized cues derived from the evolving video stream [2].
+        </p>
+        <p>
+          As the camera moves through the environment, frame-level visual features, such as motion patterns, object interactions, or temporal appearance changes, are projected into the 3D space, forming a dense, time-aware embedding field [2,3]. This enables the system to associate dynamic events with specific spatial regions in the scene, effectively grounding temporal context in 3D.
+        </p>
+        <p>
+          The result is a scene representation that supports spatio-temporal reasoning, such as identifying where certain actions occurred or how objects moved over time [3]. This work opens the door to applications in video-driven scene reconstruction, robotic memory, and embodied perception, where understanding what happened, where, and when is critical [2,3].
+        </p>
+        <p><strong>References:</strong></p>
+        <ul class="references">
+          <li>[1] Kerr, Justin, et al. "Lerf: Language embedded radiance fields." Proceedings of the IEEE/CVF International Conference on Computer Vision. 2023.</li>
+          <li>[2] Mur-Labadia, Lorenzo, Josechu Guerrero, and Ruben Martinez-Cantin. "DIV-FF: Dynamic Image-Video Feature Fields For Environment Understanding in Egocentric Videos." Proceedings of the Computer Vision and Pattern Recognition Conference. 2025.</li>
+          <li>[3] Plizzari, Chiara, et al. "Spatial cognition from egocentric video: Out of sight, not out of mind." 2025 International Conference on 3D Vision (3DV). IEEE, 2025.</li>
+        </ul>
+      </div>
 
     </section>
 
@@ -458,38 +486,9 @@
           </ul>
         </div>
 
-        <!-- Section 4 -->
-        <div id="section4" class="section">
-          <h2>4. 4D Scene Understanding for Egocentric Vision
-            <img src="images/microsoft.png" alt="Microsoft Research Logo" style="height:42px; margin-left:20px; vertical-align:middle;">
-            <img src="images/politecnico.png" alt="Politecnico di Milano Logo" style="height:42px; margin-left:20px; vertical-align:middle;">
-          </h2>
-          <p class="requirements">Requirements: Python, PyTorch, basic fundamentals on 3D</p>
-          <p class="collaborators">Collaborators: <a href="https://gabrielegoletto.github.io/" target="_blank">Gabriele Goletto</a> from Microsoft Research; <a href="https://marcocannici.github.io/" target="_blank">Marco Cannici</a> from Politecnico di Milano</p>
-          <figure style="text-align: center;">
-            <img src="images/4d_scene.png" alt="4D Scene Placeholder" class="placeholder">
-            <figcaption style="font-size: 0.9em; color: #555; margin-top: 6px;">Image from [1] </figcaption>
-          </figure>
-          <p>
-            This thesis investigates a method for 4D scene understanding by encoding the dynamic visual content of 2D videos into a spatially structured 3D representation. Inspired by Language Embedded Radiance Fields (LERF) [1], which ground language embeddings into 3D to enable open-ended queries over static scenes, the core idea is to augment volumetric scene representations with embedded descriptors that capture not only geometric and appearance information, but also temporally localized cues derived from the evolving video stream [2].
-          </p>
-          <p>
-            As the camera moves through the environment, frame-level visual features, such as motion patterns, object interactions, or temporal appearance changes, are projected into the 3D space, forming a dense, time-aware embedding field [2,3]. This enables the system to associate dynamic events with specific spatial regions in the scene, effectively grounding temporal context in 3D.
-          </p>
-          <p>
-            The result is a scene representation that supports spatio-temporal reasoning, such as identifying where certain actions occurred or how objects moved over time [3]. This work opens the door to applications in video-driven scene reconstruction, robotic memory, and embodied perception, where understanding what happened, where, and when is critical [2,3].
-          </p>
-          <p><strong>References:</strong></p>
-          <ul class="references">
-            <li>[1] Kerr, Justin, et al. "Lerf: Language embedded radiance fields." Proceedings of the IEEE/CVF International Conference on Computer Vision. 2023.</li>
-            <li>[2] Mur-Labadia, Lorenzo, Josechu Guerrero, and Ruben Martinez-Cantin. "DIV-FF: Dynamic Image-Video Feature Fields For Environment Understanding in Egocentric Videos." Proceedings of the Computer Vision and Pattern Recognition Conference. 2025.</li>
-            <li>[3] Plizzari, Chiara, et al. "Spatial cognition from egocentric video: Out of sight, not out of mind." 2025 International Conference on 3D Vision (3DV). IEEE, 2025.</li>
-          </ul>
-        </div>
-
         <!-- Section 5 -->
         <div id="section5" class="section">
-          <h2>5. Using Computer Vision to Understand Biological Brain Functioning</h2>
+          <h2>4. Using Computer Vision to Understand Biological Brain Functioning</h2>
           <p class="requirements">Requirements: Python, PyTorch</p>
           <p class="collaborators">
             Collaborators: <a href="https://cs.unibocconi.eu/people/alessandro-sanzeni" target="_blank">Alessandro Sanzeni</a> from the Department of Computing Sciences
@@ -515,7 +514,7 @@
 
         <!-- Section 6 -->
         <div id="section6" class="section">
-          <h2>6. Ego-4D / Ego-Exo-4D Challenges</h2>
+          <h2>5. Ego-4D / Ego-Exo-4D Challenges</h2>
           <p class="requirements">Requirements: Python, PyTorch</p>
           <p><strong>Note:</strong> This thesis is slightly easier, as dataset and problem formulation are already defined. Still, good solutions for existing problems might be found.</p>
           <figure style="text-align: center;">
