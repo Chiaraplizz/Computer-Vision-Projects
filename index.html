@@ -202,6 +202,7 @@
         <div class="nav-group-title">Research Proposals</div>
         <ul class="nav-sublist">
           <li><a href="#new-proposals">Overview</a></li>
+          <li><a href="#proposal4">4D Future Interaction Prediction</a></li>
           <li><a href="#proposal3">4D Vision Foundation Models</a></li>
         </ul>
       </li>
@@ -253,6 +254,29 @@
 
       <div class="section">
         <h2>Research Proposals</h2>
+      </div>
+
+      <!-- Proposal 4 -->
+      <div id="proposal4" class="section">
+        <h2>4D Future Interaction Prediction from Video</h2>
+        <p class="requirements">Requirements: Python, PyTorch, basic fundamentals on 3D</p>
+
+        <figure style="text-align: center;">
+          <img src="images/fiction.png" alt="4D future interaction prediction" class="placeholder">
+          <figcaption style="font-size: 0.9em; color: #555; margin-top: 6px;">Image from [1] </figcaption>
+        </figure>
+
+        <p>
+          Anticipating how people will interact with their surroundings is a key capability for assistive AI and robotics. Starting from the FIction paper [1], this thesis tackles 4D future interaction prediction: given a long video of a person's activity, the model predicts both <em>where</em> in the 3D environment the person will interact next and <em>how</em>, in terms of the 3D body pose they will assume during the interaction. To do so, FIction reasons jointly over the past video and the 3D structure of the surrounding environment.
+        </p>
+        <p>
+          However, FIction does not focus on dynamic objects: the environment and the objects in it are treated as largely static, while in real-world activities objects are constantly picked up, moved, and placed elsewhere. The goal of this thesis is to extend the approach to dynamic objects as well, so that predictions account for how objects move and change over time.
+        </p>
+
+        <p><strong>References:</strong></p>
+        <ul class="references">
+          <li>[1] Ashutosh, Kumar, Georgios Pavlakos, and Kristen Grauman. "FIction: 4D Future Interaction Prediction from Video." Proceedings of the Computer Vision and Pattern Recognition Conference. 2025.</li>
+        </ul>
       </div>
 
       <!-- Proposal 3 -->
